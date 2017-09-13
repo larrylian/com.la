@@ -2,7 +2,7 @@
   <div class="row cont-head">
     <div class="col-md-3 title">{{title}}</div>
     <div class="col-md-2 col-md-offset-7">
-      <button class="btn btn-info">Init Lamp</button>
+      <button class="btn btn-default" (click)="lampInit()">Init Lamp</button>
     </div>
   </div>
   <div class="row cont-body">
@@ -15,8 +15,8 @@
       <div class="row body-row">
         <div class="col-md-12 body">
           <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default btn-lg">ON</button>
-            <button type="button" class="btn btn-default btn-lg">OFF</button>
+            <button type="button" class="btn btn-default btn-lg {{btnOn}}" (click)="turnOn()">ON</button>
+            <button type="button" class="btn btn-default btn-lg {{btnOff}}" (click)="turnOff()">OFF</button>
           </div>
         </div>
       </div>

@@ -47,3 +47,7 @@
 .cont-body .content .body button {
     width: 50%;
 }
+.actived {
+    background-color: #5bc0de;
+    color: white;
+}
