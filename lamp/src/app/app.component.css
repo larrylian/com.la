@@ -1,0 +1,49 @@
+.cont {
+    width: 100%;
+    height: 900px;
+    background: url(../assets/background.jpg) no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+}
+.cont-head {
+    height: 65px;
+    background-color: white;
+    opacity: 0.7;
+}
+.cont-head .title {
+    height: 65px;
+    font-size: 25px;
+    line-height: 65px;
+}
+.cont-head button {
+    margin-top: 15px;
+}
+
+.cont-body {
+    margin-top: 100px;
+}
+.cont-body .content{
+    border-radius: 5px;
+    background-color: white;
+    height: 300px;
+    opacity: 0.7;
+    padding-top: 30px;
+}
+
+.cont-body .content .title {
+    height: 20px;
+    line-height: 20px;
+    font-size: 17px;
+}
+.cont-body .content .body-row {
+    margin-top: 100px;
+}
+.cont-body .content .body {
+    height: 40px;
+}
+.cont-body .content .body .btn-group {
+    width: 100%;
+}
+.cont-body .content .body button {
+    width: 50%;
+}
