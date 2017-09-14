@@ -1,17 +1,10 @@
 #!/bin/bash
 
-# 获得超级权限
-sudo su
-# 进入GPIO目录
-cd /sys/class/gpio
+# 获得超级权
+sudo echo 18 > /sys/class/gpio/export
 
-echo 18 > export
-
-cd gpio18
 
 # 设置GPIO为输出方向
-echo out > direction
+sudo echo out > /sys/class/gpio/gpio18/direction
 # BCM_GPIO输出逻辑高电平，LED点亮
-echo 1 > value
-
-exit
+sudo echo 1 > /sys/class/gpio/gpio18/value
