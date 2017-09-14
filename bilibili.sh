@@ -1,7 +1,7 @@
 #!/bin/bash
 
 int = 0
-max = 20
+max = 3
 while [$int -lt $max]
 do
 sudo echo 1 > /sys/class/gpio/gpio18/value
