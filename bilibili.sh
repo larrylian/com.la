@@ -8,5 +8,5 @@ sudo echo 1 > /sys/class/gpio/gpio18/value
 sleep 1;
 sudo echo 0 > /sys/class/gpio/gpio18/value
 sleep 1;
-let "int++"
+int=`expr $int + 1`
 done
