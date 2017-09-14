@@ -19,9 +19,15 @@ switch ($status) {
         lampInit();
     case "test":
         test();
+    case "bilibili":
+        lampBili();
     default:
         echoJson(["code"=>"100000", "msg"=>"参数错误"]);
         break;
+}
+function lampBili() {
+    $out = cmdSh("bilibili.sh");
+    echoSuccess($out);
 }
 function lampOn() {
     $out = cmdSh("on.sh");
