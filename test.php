@@ -6,6 +6,7 @@
  * Time: 9:35 AM
  */
 error_reporting(E_ALL);
+define('BASE_PATH', dirname(__FILE__)."/");
 cmdSh("test.sh");
 function cmdSh($fileName) {
     $cmdPrefix = "/usr/bin/sudo /bin/sh ";
