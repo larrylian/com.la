@@ -5,7 +5,7 @@
  * Date: 13/09/2017
  * Time: 11:07 PM
  */
-
+error_reporting(E_ALL);
 define('BASE_PATH', dirname(__FILE__)."/");
 $status = isset($_GET["status"])?$_GET["status"]:"";
 switch ($status) {
