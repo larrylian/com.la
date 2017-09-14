@@ -5,9 +5,9 @@ sudo su
 # 进入GPIO目录
 cd /sys/class/gpio
 
-echo 26 > export
+echo 18 > export
 
-cd gpio26
+cd gpio18
 
 # 设置GPIO为输出方向
 echo out > direction

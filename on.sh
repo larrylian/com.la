@@ -4,6 +4,6 @@
 sudo su
 # 进入GPIO目录
 cd /sys/class/gpio
-cd gpio26
+cd gpio18
 echo 1 > value
 exit

@@ -7,7 +7,7 @@
  */
 
 define('BASE_PATH', dirname(__FILE__)."/");
-$status = $_GET["status"]??"";
+$status = isset($_GET["status"])?$_GET["status"]:"";
 switch ($status) {
     case "on":
         lampOn();
