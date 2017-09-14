@@ -24,4 +24,7 @@ export class AppComponent {
   lampInit(): void {
       this.lampService.doLamp("init");
   }
+  lampBili(): void {
+      this.lampService.doLamp("bilibili")
+  }
 }

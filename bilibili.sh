@@ -1,7 +1,8 @@
 #!/bin/bash
 
-
-while (($int < 20));
+int = 0
+max = 20
+while [$int -lt $max]
 do
 sudo echo 1 > /sys/class/gpio/gpio18/value
 sleep 1;

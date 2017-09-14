@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid cont\">\n  <div class=\"row cont-head\">\n    <div class=\"col-md-3 title\">{{title}}</div>\n    <div class=\"col-md-2 col-md-offset-7\">\n      <button class=\"btn btn-default\" (click)=\"lampInit()\">Init Lamp</button>\n    </div>\n  </div>\n  <div class=\"row cont-body\">\n    <div class=\"col-md-offset-4 col-md-4 content\">\n      <div class=\"row\">\n        <div class=\"col-md-12 text-center title\">\n          点击按钮 控制小灯\n        </div>\n      </div>\n      <div class=\"row body-row\">\n        <div class=\"col-md-12 body\">\n          <div class=\"btn-group\" role=\"group\" aria-label=\"...\">\n            <button type=\"button\" class=\"btn btn-default btn-lg {{btnOn}}\" (click)=\"turnOn()\">ON</button>\n            <button type=\"button\" class=\"btn btn-default btn-lg {{btnOff}}\" (click)=\"turnOff()\">OFF</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container-fluid cont\">\n  <div class=\"row cont-head\">\n    <div class=\"col-md-3 title\">{{title}}</div>\n    <div class=\"col-md-2 col-md-offset-7\">\n      <button class=\"btn btn-default\" (click)=\"lampInit()\">Init Lamp</button>\n      <button class=\"btn btn-default\" (click)=\"lampBili()\">闪烁</button>\n    </div>\n  </div>\n  <div class=\"row cont-body\">\n    <div class=\"col-md-offset-4 col-md-4 content\">\n      <div class=\"row\">\n        <div class=\"col-md-12 text-center title\">\n          点击按钮 控制小灯\n        </div>\n      </div>\n      <div class=\"row body-row\">\n        <div class=\"col-md-12 body\">\n          <div class=\"btn-group\" role=\"group\" aria-label=\"...\">\n            <button type=\"button\" class=\"btn btn-default btn-lg {{btnOn}}\" (click)=\"turnOn()\">ON</button>\n            <button type=\"button\" class=\"btn btn-default btn-lg {{btnOff}}\" (click)=\"turnOff()\">OFF</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -79,6 +79,9 @@ var AppComponent = (function () {
     };
     AppComponent.prototype.lampInit = function () {
         this.lampService.doLamp("init");
+    };
+    AppComponent.prototype.lampBili = function () {
+        this.lampService.doLamp("bilibili");
     };
     return AppComponent;
 }());
